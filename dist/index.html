@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List App</title>
+  <script src="https://kit.fontawesome.com/29c7e0364b.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+</head>
+
+<div class="topnav">
+  <h2>Todo List App</h2>
+  <a href="#" class="icon">
+    <i class="fa fa-bars"> </i>
+  </a>
+</div>
+<div class="wrapper">
+  <div class="projectSection">
+    <h2 class="projectHeader">Project List</h2>
+    <ul class="projectList"></ul>
+    <form class="newProjectForm">
+      <button class="projectAddBtn"><i class="fas fa-plus"></i></button>
+      <input type="text" class="projectNameInput" placeholder="New project" maxlength="30" />
+    </form>
+  </div>
+  <div class="box todoBox">
+    <h2 class="projectName"></h2>
+    <p>Remaining task: <span class="taskCounter"></span></p>
+    <div class="box taskSection">
+      <form action="" class="taskForm">
+        <button class="taskForm_addBtn"><i class="fas fa-plus"></i></button>
+        <input type="text" class="taskForm_textInput" placeholder="Add a task" maxlength="90" />
+      </form>
+      <div class="tasks">
+      </div>
+      <button id="clearRemaining">Clear All</button>
+      <div class="checkedSection">
+        <button id="arrowBtn">
+          <i id="rightArrow" class="fas fa-chevron-right"></i>
+        </button>
+        <label style="cursor: pointer; user-select: none" for="arrowBtn">Completed <span
+            id="checkedCount"></span></label>
+        <div class="checkedTaskList">
+        </div>
+        <button id="clearChecked">Clear All</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="bundle.js"></script>
+</body>
+
+</html>
