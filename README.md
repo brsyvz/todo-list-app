@@ -35,3 +35,4 @@ Todo list app to organize and keep track of your tasks.
 - Responsive design.
 - local storage.
 - webpack
+- create, read, delete functionality.
