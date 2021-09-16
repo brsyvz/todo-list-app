@@ -25,6 +25,7 @@ body {
   background-color: #f4f4f4;
   color: #3e6ae4b6;
   padding-left: 15%;
+  font-size: 26px;
 }
 
 .topnav #sidebarContent {
@@ -36,16 +37,16 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
+
 }
 
 .topnav a.icon {
   background: #3e69e4;
   display: none;
-  font-size: 18px;
   position: absolute;
-  right: 0;
-  top: 14px;
+  right: 1.5vw;
+  top: 0;
+  font-size: 26px;
 }
 
 .wrapper {
@@ -94,10 +95,12 @@ body {
 .project > label {
   cursor: pointer;
   order: -1;
-  margin-right: 2.5vw;
+  width: 40px;
   color: rgba(128, 128, 128, 0.829);
   font-weight: normal !important;
 }
+
+
 
 .projectList > li:nth-child(1) {
   border-bottom: 1px solid rgba(128, 128, 128, 0.411);
@@ -301,11 +304,15 @@ button {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
+
+  .project > label {
+    width: 32px;
+  }
   .todoBox {
     width: 90%;
     margin: auto;
-    margin-top: 20px;
-    height: 100vh;
+    margin-top: 10px;
+    height: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
@@ -325,7 +332,13 @@ button {
     flex-direction: column;
   }
 
+.topnav h2 {
+  font-size: 20px;
+}
+
   .topnav a.icon {
     display: block;
+ font-size: 20px;
+
   }
 }
